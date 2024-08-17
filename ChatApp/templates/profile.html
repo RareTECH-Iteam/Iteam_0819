@@ -1,0 +1,41 @@
+{% extends 'base.html' %} 
+{% block title %}
+    <title>Profile</title>
+{% endblock %} 
+{% block maincontent %}
+    <div class="col-sm-9 content mt-5 offset-sm-3">
+        <div class="row">
+            <h1 class="p-0">プロフィール画面</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-11">
+                <hr>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-3">
+                <img src="{{ url_for('static', filename='img/icon/' + user.icon) }}" alt="User Icon" width="160" height="160" class="rounded-circle">
+            </div>
+            <div class="col-7">
+                <div class="row">
+                    <div class="col-3"><p class="text-start">ユーザ名</p></div>
+                    <div class="col-7"><p class="text-start"> {{ user.username }} </p></div>
+                </div>
+                <div class="row">
+                    <div class="col-3"><p class="text-start">メールアドレス</p></div>
+                    <div class="col-7"><p class="text-start"> {{ user.email }} </p></div>
+                </div>
+                <div class="row">
+                    <div class="col-3"><p class="text-start">居住地</p></div>
+                    <div class="col-7"><p class="text-start"> {{ user.address }} </p></div>
+                </div>
+                <div class="row">
+                    <div class="col-3"><p class="text-start">あいさつ文</p></div>
+                    <div class="col-7"><p class="text-start"> {{ user.greeting }} </p></div>    
+                </div>
+            </div>
+        </div>
+        <a class="nes-btn" href="{{ url_for('home') }}">ホーム画面</a>
+        <a class="nes-btn is-primary" href="{{ url_for('profile_edit') }}">変更</a>
+    </div>
+{% endblock %} 
