@@ -45,25 +45,25 @@ CREATE TABLE messages (
 
 -- ユーザデータのサンプル挿入
 INSERT INTO users (uid, username, email, password, address, greeting, icon) VALUES
-('1', 'アリス', 'alice@example.com', 'password1', '北海道', 'こんにちは、アリスです。', 'icon1.png'),
-('2', 'タロウ', 'taro@example.com', 'password2', '北海道', 'こんにちは、タロウです。', 'icon2.png'),
-('3', 'カズマ', 'kazuma@example.com', 'password3', '北海道', 'こんにちは、カズマです。', 'icon3.png'),
-('4', 'ハナコ', 'hanako@example.com', 'password4', '北海道', 'こんにちは、ハナコです。', 'icon4.png'),
-('5', 'ケンタ', 'kenta@example.com', 'password5', '北海道', 'こんにちは、ケンタです。', 'icon5.png'),
-('6', 'サクラ', 'sakura@example.com', 'password6', '北海道', 'こんにちは、サクラです。', 'icon6.png'),
-('7', 'ユウタ', 'yuta@example.com', 'password7', '北海道', 'こんにちは、ユウタです。', 'icon7.png'),
-('8', 'アヤ', 'aya@example.com', 'password8', '北海道', 'こんにちは、アヤです。', 'icon8.png'),
-('9', 'ナオ', 'nao@example.com', 'password9', '北海道', 'こんにちは、ナオです。', 'icon9.png'),
-('10', 'リョウ', 'ryo@example.com', 'password10', '北海道', 'こんにちは、リョウです。', 'icon10.png'),
-('11', 'ユキ', 'yuki@example.com', 'password12', '青森県', 'こんにちは、ユキです。', 'icon11.png'),
-('12', 'ショウ', 'sho@example.com', 'password13', '青森県', 'こんにちは、ショウです。', 'icon12.png'),
-('13', 'ミキ', 'miki@example.com', 'password14', '青森県', 'こんにちは、ミキです。', 'icon13.png'),
-('14', 'リナ', 'rina@example.com', 'password15', '青森県', 'こんにちは、リナです。', 'icon14.png'),
-('15', 'ハルカ', 'haruka@example.com', 'password16', '青森県', 'こんにちは、ハルカです。', 'icon15.png'),
-('16', 'タケシ', 'takeshi@example.com', 'password17', '青森県', 'こんにちは、タケシです。', 'icon16.png'),
-('17', 'ユウ', 'yuu@example.com', 'password18', '青森県', 'こんにちは、ユウです。', 'icon17.png'),
-('18', 'ミズキ', 'mizuki@example.com', 'password19', '青森県', 'こんにちは、ミズキです。', 'icon18.png'),
-('19', 'アキラ', 'akira@example.com', 'password20', '青森県', 'こんにちは、アキラです。', 'icon19.png');
+('1', 'アリス', 'alice@example.com', 'password1', '北海道', 'こんにちは、アリスです。', 'chick.png'),
+('2', 'タロウ', 'taro@example.com', 'password2', '北海道', 'こんにちは、タロウです。', 'crab.png'),
+('3', 'カズマ', 'kazuma@example.com', 'password3', '北海道', 'こんにちは、カズマです。', 'dog.png'),
+('4', 'ハナコ', 'hanako@example.com', 'password4', '北海道', 'こんにちは、ハナコです。', 'dolphin.png'),
+('5', 'ケンタ', 'kenta@example.com', 'password5', '北海道', 'こんにちは、ケンタです。', 'elephant.png'),
+('6', 'サクラ', 'sakura@example.com', 'password6', '北海道', 'こんにちは、サクラです。', 'frog.png'),
+('7', 'ユウタ', 'yuta@example.com', 'password7', '北海道', 'こんにちは、ユウタです。', 'giraffe.png'),
+('8', 'アヤ', 'aya@example.com', 'password8', '北海道', 'こんにちは、アヤです。', 'gorilla.png'),
+('9', 'ナオ', 'nao@example.com', 'password9', '北海道', 'こんにちは、ナオです。', 'hedgehog.png'),
+('10', 'リョウ', 'ryo@example.com', 'password10', '北海道', 'こんにちは、リョウです。', 'horse.png'),
+('11', 'ユキ', 'yuki@example.com', 'password12', '青森県', 'こんにちは、ユキです。', 'ladybug.png'),
+('12', 'ショウ', 'sho@example.com', 'password13', '青森県', 'こんにちは、ショウです。', 'lion.png'),
+('13', 'ミキ', 'miki@example.com', 'password14', '青森県', 'こんにちは、ミキです。', 'octopus.png'),
+('14', 'リナ', 'rina@example.com', 'password15', '青森県', 'こんにちは、リナです。', 'peacock.png'),
+('15', 'ハルカ', 'haruka@example.com', 'password16', '青森県', 'こんにちは、ハルカです。', 'pig.png'),
+('16', 'タケシ', 'takeshi@example.com', 'password17', '青森県', 'こんにちは、タケシです。', 'sloth.png'),
+('17', 'ユウ', 'yuu@example.com', 'password18', '青森県', 'こんにちは、ユウです。', 'snail.png'),
+('18', 'ミズキ', 'mizuki@example.com', 'password19', '青森県', 'こんにちは、ミズキです。', 'squirrel.png'),
+('19', 'アキラ', 'akira@example.com', 'password20', '青森県', 'こんにちは、アキラです。', 'turtle.png');
 
 -- チャットルームのサンプル挿入
 -- INSERT INTO chat (uid, name, abstract, user_ids) VALUES
