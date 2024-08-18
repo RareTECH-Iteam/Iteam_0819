@@ -74,8 +74,8 @@ def signup():
             flash('正しいメールアドレスの形式ではありません')
         else:
             uid = uuid.uuid4()
-            # password = hashlib.sha256(password1.encode('utf-8')).hexdigest()
-            password = password1  # local検証の為、一時的にハッシュ化しない
+            password = hashlib.sha256(password1.encode('utf-8')).hexdigest()
+            # password = password1  # local検証の為、一時的にハッシュ化しない
             DBuser = dbConnect.getUser(email) # メールアドレスを元にユーザー情報を検索する
 
             if DBuser is not None:
