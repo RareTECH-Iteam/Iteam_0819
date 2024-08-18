@@ -14,12 +14,12 @@
         </div>
         {% if chat_rooms %}
             {% for room in chat_rooms %}
-            <div class="row justify-content-center d-flex align-items-center mb-3 position-relative">
+            <div class="row justify-content-center d-flex align-items-center mb-3 position-relative image_link">
                 <a href="{{ url_for('chat', room_id=room['id']) }}" class="stretched-link"></a>
                 <div class="col-2">
-                    <img src="{{ room['icon'] }}" alt="User Icon" width="32" height="32" class="rounded-circle">
+                    <img src="{{ room['icon'] }}" alt="User Icon" width="80" height="80" class="">
                 </div>
-                <div class="col-2">
+                <div class="col-lg-4 col-8">
                     <p class="mb-0">{{ room['name'] }}のチャットルーム</p>
                 </div>
             </div>

@@ -75,6 +75,10 @@
     width: 640px
   }
 
+  .icon-none{
+    display:none; 
+  }
+
   .button{
     display: flex;
     align-items: center;

@@ -13,8 +13,8 @@
             </div>
         </div>
         <div class="row justify-content-center mb-2">
-            <div class="col-8 d-flex justify-content-center">
-                <div class="nes-field col-10">
+            <div class="col-10 d-flex justify-content-center">
+                <div class="nes-field col-8">
                     <div class="nes-select">
                         <select id="address-select">
                         <option value="" disabled selected hidden>-----</option>
@@ -150,9 +150,9 @@
                 const userDiv = document.createElement('div'); // 新しいdiv要素を作成
                 userDiv.classList.add('icon-item'); // div要素にクラスを追加
                 userDiv.innerHTML = `
-                    <div class="row justify-content-center d-flex align-items-center mb-3">
+                    <div class="row justify-content-center d-flex align-items-center mb-3 image_link">
                         <div class="col-2">
-                            <img src="${user.icon}" alt="User Icon" width="32" height="32" class="rounded-circle">
+                            <img src="${user.icon}" alt="User Icon" width="80" height="80" class="">
                         </div>
                         <div class="col-2">
                             <span class="text-start mb-0">${user.name}</span>
@@ -160,7 +160,7 @@
                         <div class="col-2">
                             <span class="text-start mb-0">${user.address}</span>
                         </div>
-                        <div class="col-2">
+                        <div class="col-4">
                             <span class="text-start mb-0">${user.greeting}</span>
                         </div>
                         <div>

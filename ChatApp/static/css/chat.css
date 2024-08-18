@@ -5,6 +5,10 @@
     margin-top: 80px;
     margin-bottom: 60px;
 }
+.message-style{
+    max-width: 40rem;
+    overflow-wrap: break-word;
+}
 @media (max-width: 768px) {
     .nes-field.is-inline{
         display: flex;

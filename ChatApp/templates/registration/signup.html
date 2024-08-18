@@ -81,19 +81,9 @@
                 <label for="greeting">あいさつ</label>
                 <input type="text" name="greeting" id="greeting" class="nes-input">
             </div>
-            <div class="form-Element nes-field">
+            <div class="form-Element icon-none">
                 <label for="icon">アイコン</label>
-                <div class="nes-select">
-                    <select required name="icon" id="icon">
-                        <option value="" disabled selected hidden>アイコンを選択</option>
-                        {% for icon in icons %}
-                            <option value="{{ icon }}">{{ icon }}</option>
-                        {% endfor %}
-                    </select>
-                </div>
-                <div class="icon-preview">
-                    <img id="icon-preview-img" src="" alt="アイコンプレビュー" class="nes-avatar is-large"/>
-                </div>
+                <input type="text" name="icon" id="icon" class="nes-input">
             </div>
             <div class="form-Element button">
                 {% with messages = get_flashed_messages() %} {% if messages %}
@@ -109,10 +99,11 @@
         </form>
     </main>
     <script>
-        document.getElementById('icon').addEventListener('change', function() {
-            const icon = this.value;
-            const imgPath = "{{ url_for('static', filename='img/icon/') }}" + icon;
-            document.getElementById('icon-preview-img').src = imgPath;
-        });
+        window.onload = function() {                           // ページが読み込まれたときに呼び出される関数
+            let random = Math.floor( Math.random() * 23) + 1;  //乱数を生成
+            let iconValue = "icon" + random + ".png";
+            var iconInput = document.getElementById("icon");
+            iconInput.value = iconValue;
+        };
     </script>     
 {% endblock %}
